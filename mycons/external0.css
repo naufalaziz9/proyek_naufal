@@ -1,0 +1,45 @@
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+  }
+
+  .navbar-form {
+      text-align: center;
+      width: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 0;
+      margin-left: 0;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+  .navbar-form {
+      padding: 10px 15px;
+      margin-top: 8px;
+      margin-right: -15px;
+      margin-bottom: 8px;
+      margin-left: -15px;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  }  

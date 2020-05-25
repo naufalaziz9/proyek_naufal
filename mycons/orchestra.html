@@ -1,0 +1,609 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-theme.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.default.css">
+    <link rel="stylesheet" href="externalmusic.css">
+    <!-- Css animations  -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+    <title>Orchestra</title>
+</head>
+
+<body>
+    <style>
+        #gambar .product .image img {
+            width: 373px;
+            height: 249px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+
+            width: 85%;
+            margin: 10px auto;
+        }
+
+        nav ul ul {
+            display: none;
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+            width: 150px;
+        }
+
+        nav ul {
+            background: white;
+            padding: 0 20px;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            width: 100%;
+        }
+
+        nav ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li:hover {
+            background: #666;
+        }
+
+        nav ul li:hover a {
+            color: #fff;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 25px;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul ul {
+            background: #53bd84;
+            border-radius: 0px;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+
+        nav ul ul li {
+            float: none;
+            border-top: 1px soild #53bd84;
+            border-bottom: 1px solid #53bd84;
+            position: relative;
+        }
+
+        nav ul ul li a {
+            padding: 15px 40px;
+            color: black;
+        }
+
+        nav ul ul li a:hover {
+            background-color: #666;
+        }
+
+        nav ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+
+        .logo {
+            color: black;
+            font-family: sans-serif;
+            font-size: 40px;
+            font-style: italic;
+            padding: 10px;
+        }
+
+        .belakang {
+            float: left;
+            margin: 10px 60px 10px 60px;
+        }
+
+        .belakang h2 {
+            text-align: center
+        }
+
+        .belakang p {
+            text-align: center
+        }
+
+        .latar {
+            background-size: cover;
+            margin: 0 auto;
+            height: 250px;
+            width: 80%;
+            margin: 20px auto;
+            overflow: auto
+        }
+
+        .button {
+            position: relative;
+        }
+
+        .footer {
+            background-color: gray;
+            widows: 100px;
+            height: 150px;
+        }
+
+        .latar2 {
+            background-size: cover;
+            margin: 0 auto;
+            height: 400px;
+            width: 80%;
+            margin: 20px auto;
+            overflow: auto
+        }
+    </style>
+
+
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.php" style="font-size: 40px;font-style:italic;float:left;text-decoration: none;">MY
+                    CONS</a></li>
+            <li><a href="music.php" style="margin-top: 20px;">Music</a></li>
+            <li><a href="drama.php" style="margin-top: 20px;">Drama</a>
+            <li><a href="orchestra.php" style="margin-top: 20px;">Orchestra </a>
+            <li><a href="expo.php" style="margin-top: 20px;">Expo</a>
+            </li>
+            <li style="margin-top:15px;margin-left: 30px;">
+                <input type="search" class="form-control" placeholder="search" required=""
+                    style="width: 500px;float: right;">
+            </li>
+            <li style="float: right;"><a href="login.php" style="margin-top: 20px;">Log In</a></li>
+        </ul>
+    </nav>
+    <div id="body" class="col-md-12">
+        <div class="col-sm-2">
+
+            <!-- *** MENUS AND FILTERS ***
+_________________________________________________________ -->
+            <div class="panel panel-default sidebar-menu">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">Categories</h3>
+                </div>
+
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked category-menu">
+                        <li>
+                            <a href="shop-category.php">Men <span class="badge pull-right">42</span></a>
+                            <ul>
+                                <li><a href="shop-category.php">T-shirts</a>
+                                </li>
+                                <li><a href="shop-category.php">Shirts</a>
+                                </li>
+                                <li><a href="shop-category.php">Pants</a>
+                                </li>
+                                <li><a href="shop-category.php">Accessories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="active"> -->
+                        <a href="shop-category.php">Ladies <span class="badge pull-right">123</span></a>
+                        <ul>
+                            <li><a href="shop-category.php">T-shirts</a>
+                            </li>
+                            <li><a href="shop-category.php">Skirts</a>
+                            </li>
+                            <li><a href="shop-category.php">Pants</a>
+                            </li>
+                            <li><a href="shop-category.php">Accessories</a>
+                            </li>
+                        </ul>
+                        <!-- </li> -->
+                        <li>
+                            <a href="shop-category.php">Kids <span class="badge pull-right">11</span></a>
+                            <ul>
+                                <li><a href="shop-category.php">T-shirts</a>
+                                </li>
+                                <li><a href="shop-category.php">Skirts</a>
+                                </li>
+                                <li><a href="shop-category.php">Pants</a>
+                                </li>
+                                <li><a href="shop-category.php">Accessories</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- *** MENUS AND FILTERS END *** -->
+
+            <!-- /.banner -->
+        </div>
+        <div id="isi" class="col-md-10">
+
+            <div class="col-sm-12">
+
+                <p class="text-muted lead">In our Ladies department we offer wide selection of the best products we have
+                    found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss.
+                </p>
+
+                <div class="row products">
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/orc1.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Violin is My Life</a></h3>
+                                <p class="price">$143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/jazzclub.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Jazz Club</a></h3>
+                                <p class="price"><del>$280</del> $143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon sale">
+                                <div class="theribbon">SALE</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/orc2.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Woman with an Iron Heart</a></h3>
+                                <p class="price">$143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/orc3.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Amazing Peoples</a></h3>
+                                <p class="price">$143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/orc4.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Beautiful Woman</a></h3>
+                                <p class="price">$143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" id="gambar">
+                        <div class="product">
+                            <div class="image" style="height: 262px;">
+                                <a href="product.php">
+                                    <img src="assets/images/stage.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="product.php">Quiet Place</a></h3>
+                                <p class="price">$143.00</p>
+                                <p class="buttons">
+                                    <a href="product.php" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.php" class="btn btn-template-main"><i
+                                            class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                </div>
+                <!-- /.products -->
+
+                <div class="row">
+
+                    <div class="col-md-12 banner">
+                        <a href="#">
+                            <img src="img/banner2.jpg" alt="" class="img-responsive">
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="pages">
+
+                    <p class="loadMore">
+                        <a href="#" class="btn btn-template-main"><i class="fa fa-chevron-down"></i> Load more</a>
+                    </p>
+
+                    <ul class="pagination">
+                        <li><a href="#">«</a>
+                        </li>
+                        <li class="active"><a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a>
+                        </li>
+                        <li><a href="#">3</a>
+                        </li>
+                        <li><a href="#">4</a>
+                        </li>
+                        <li><a href="#">5</a>
+                        </li>
+                        <li><a href="#">»</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="col-md-12" style="margin-top: 500px;">
+        <div class="container">
+            <div class="col-md-4 col-sm-8">
+                <h4>About us</h4>
+
+                <p>kita adalah penyedia jasa tiket konser</p>
+
+                <hr>
+
+                <h4>Join our monthly newsletter</h4>
+
+                <form>
+                    <div class="input-group">
+
+                        <input type="text" class="form-control">
+
+                        <span class="input-group-btn">
+
+                            <button class="btn btn-default" type="button"><i class="fa fa-send"></i>&gt;</button>
+
+                        </span>
+
+                    </div>
+                    <!-- /input-group -->
+                </form>
+
+                <hr class="hidden-md hidden-lg hidden-sm">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+            <div class="col-md-4 col-sm-8">
+
+                <h4>KATEGORI</h4>
+
+                <div class="blog-entries">
+                    <div class="item same-height-row clearfix">
+                        <div class="image same-height-always" style="height: 38px;">
+                            <a href="#">
+                                <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="name same-height-always" style="height: 38px;">
+                            <h5><a href="#">Musik</a></h5>
+                        </div>
+                    </div>
+
+                    <div class="item same-height-row clearfix">
+                        <div class="image same-height-always" style="height: 38px;">
+                            <a href="#">
+                                <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="name same-height-always" style="height: 38px;">
+                            <h5><a href="#">Drama</a></h5>
+                        </div>
+                    </div>
+
+                    <div class="item same-height-row clearfix">
+                        <div class="image same-height-always" style="height: 38px;">
+                            <a href="#">
+                                <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="name same-height-always" style="height: 38px;">
+                            <h5><a href="#">Orkestra</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hidden-md hidden-lg">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+            <div class="col-md-4 col-sm-8">
+
+                <h4>Contact</h4>
+
+                <p><strong>mycons Ltd.</strong>
+                    <br>Indonesia, Surabaya
+                    <br>Surabaya
+                    <br>Citraland, Universitas Ciputra
+                    <br>Bukit Golf Utama E6/12
+                    <br>
+                    <strong>Indonesia</strong>
+                </p>
+
+                <a href="contact.php" class="btn btn-small btn-template-main">Go to contact page</a>
+
+                <hr class="hidden-md hidden-lg hidden-sm">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+
+
+            <!-- <div class="col-md-3 col-sm-6">
+      
+                    <h4>Photostream</h4>
+      
+                    <div class="photostream">
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div style="height: 84px;">
+                            <a href="#">
+                                <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                    </div>
+      
+                </div> -->
+            <!-- /.col-md-3 -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+
+
+    <link rel="stylesheet" href="external.css">
+    <script src="assets/script/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

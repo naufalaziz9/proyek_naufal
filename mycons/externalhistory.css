@@ -1,0 +1,113 @@
+.dasbor-fixeds{
+    overflow: hidden;
+    background-color: #fcfafa;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 18px;
+ 
+   
+  }
+  img {
+    max-width: 100%;
+    min-height:100%;
+    z-index: 1;
+}
+  
+  .dasbor-fixeds a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    #konten p{
+        font-size: 20px;font-family: 'Courier New', Courier, monospace;font-weight: bolder;
+    }
+    #total{
+        float: right;
+        margin-top: -100px;
+        margin-right: 20px;
+    }
+    .isi{
+        padding-top: 100px;
+        background-color: #ECEFF1;
+        width: 80%;
+        height: 1500px;
+        margin: 0 auto;
+    }
+    #foto{ float: left;
+        background: whitesmoke;
+        border-style: groove;
+        width: 200px;
+        height: 200px;
+    
+        margin-left: 100px;background-color: brown;margin-top:50px}
+        #konten{ float: left;
+            background: whitesmoke;
+            border-style: groove;
+            width: 700px;
+            height: 200px;
+            margin-left: 10px;background-color: #90A4AE;margin-top:50px;text-align: center;}
+         
+
+            #footer {
+                background: #555;
+                padding: 50px 0;
+                color: #999;
+                clear: both;
+            }
+            article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+                display: block;
+            }
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            user agent stylesheet
+            footer {
+                display: block;
+            }
+            body {
+                font-family: "Roboto",Helvetica,Arial,sans-serif;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+            }
+            body {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #333;
+                background-color: #fff;
+            }
+            html {
+                font-size: 10px;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            html {
+                font-family: sans-serif;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            user agent stylesheet
+            html {
+                color: -internal-root-color;
+            }
+            :after, :before {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            :after, :before {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+           
+             

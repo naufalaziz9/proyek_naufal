@@ -1,0 +1,76 @@
+body {
+    background-color: white
+  }
+  
+ 
+  
+/*   
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 70px;
+  } */
+ .bawahnya p{font-size: 25;color: white;font-family:'Times New Roman', Times, serif;font-weight: bolder;}
+  
+  
+  /* DI BAWAH INI CSS UTK CHART.php */
+  .dasbor-fixeds{
+    overflow: hidden;
+    background-color: #fcfafa;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 18px;
+ 
+   
+  }
+  
+  .dasbor-fixeds a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .isi{
+      background-color: blue;
+      height:800px;
+      width:100%;
+      clear: both;
+      padding-top: 200PX
+ 
+    
+      
+  }
+#foto{ float: left;
+    background: whitesmoke;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+
+    margin-left: 220px;background-color: brown;margin-top:50px}
+    #konten{ float: left;
+        background: whitesmoke;
+        border-style: groove;
+        width: 700px;
+        height: 200px;
+        margin-left: 10px;background-color: brown;margin-top:50px}
+        
+
+        #footer{
+         
+ 
+        
+       
+       
+        margin-top: 20px
+        }
+        p,h2{text-align: center;}
+  
+ 

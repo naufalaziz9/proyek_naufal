@@ -1,0 +1,130 @@
+.dasbor-fixeds{
+  overflow: hidden;
+  background-color: #fcfafa;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 18px;
+}
+
+.dasbor-fixeds a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.foto-one {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 180px;
+  height: 180px;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+.gambar-one {
+  /* margin-top:95px;
+  margin-left: 95px; */
+  text-align: center;
+  margin: 100px auto;
+}
+
+.desc-one {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 550px;
+  height: 180px;
+  margin-left: 5px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.event-one {
+  
+
+}
+
+.cart-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3c4245;
+  color: #fcfafa;
+  text-align: center;
+  padding: 20px;
+}
+
+/* DI BAWAH INI CSS UTK KOTAK DAN PERSEGI PANJANG KE-2 */
+.foto-two {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 180px;
+  height: 180px;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+.gambar-two {
+  /* margin-top:95px;
+  margin-left: 95px; */
+  text-align: center;
+  margin: 100px auto;
+}
+
+.desc-two {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 550px;
+  height: 180px;
+  margin-left: 5px;
+  text-align: center;
+  margin-top: 30px;
+  /* vertical-align: baseline; */
+}
+
+.event-two {
+ 
+}
+/* DI BAWAH INI CSS UTK KOTAK DAN PERSEGI PANJANG KE-3 */
+.foto-tiga {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 180px;
+  height: 180px;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+.gambar-tiga {
+  /* margin-top:95px;
+  margin-left: 95px; */
+  text-align: center;
+  margin: 100px auto;
+}
+
+.desc-tiga {
+  float: left;
+  background: whitesmoke;
+  border-style: groove;
+  width: 550px;
+  height: 180px;
+  margin-left: 5px;
+  text-align: center;
+  margin-top: 30px;
+  /* vertical-align: baseline; */
+}
+
+.event-tiga {
+  margin-top: 110px;
+}

@@ -1,0 +1,372 @@
+#background {
+
+  height: 600px;
+  background-color: white;
+  margin: auto;
+
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#gambar {
+  width: 10%;
+  height: 300px;
+  background-color: rgb(255, 255, 255)
+}
+
+#harga h1 {
+  color: teal;
+  font-size: 40px
+}
+
+#harga {
+  margin: 0 auto;
+  padding-left: 90px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.box-image {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.background #gambar img {
+  width: 100%;
+  min-height: 300px;
+  background-color: wheat;
+  margin: auto;
+}
+
+
+* http: //geedmo.github.com/yamm3
+
+* * @geedmo - Licensed under the MIT license */.yamm .nav,
+.yamm .collapse,
+.yamm .dropup.use-yamm,
+.yamm .dropdown.use-yamm {
+  position: static
+}
+
+.yamm .container {
+  position: relative
+}
+
+.yamm .dropdown-menu {
+  left: auto
+}
+
+.yamm .nav.navbar-right .dropdown-menu {
+  left: auto;
+  right: 0
+}
+
+.yamm .yamm-content {
+  padding: 20px 30px
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 15px;
+  right: 15px
+}
+
+.make-grid-columns() {
+
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col(@index) {
+    // initial
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), @item);
+  }
+
+  .col(@index, @list) when (@index =< @grid-columns) {
+    // general; "=<" isn't a typo
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+
+  .col(@index, @list) when (@index > @grid-columns) {
+
+    // terminal
+    @{list} {
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      // Inner gutter via padding
+      padding-left: ceil((@grid-gutter-width / 2));
+      padding-right: floor((@grid-gutter-width / 2));
+    }
+  }
+
+  .col(1); // kickstart it
+}
+
+.float-grid-columns(@class) {
+  .col(@index) {
+    // initial
+    @item: ~".col-@{class}-@{index}";
+    .col((@index + 1), @item);
+  }
+
+  .col(@index, @list) when (@index =< @grid-columns) {
+    // general
+    @item: ~".col-@{class}-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+
+  .col(@index, @list) when (@index > @grid-columns) {
+
+    // terminal
+    @{list} {
+      float: left;
+    }
+  }
+
+  .col(1); // kickstart it
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =width) and (@index > 0) {
+  .col-@{class}-@{index} {
+    width: percentage((@index / @grid-columns));
+  }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =push) and (@index > 0) {
+  .col-@{class}-push-@{index} {
+    left: percentage((@index / @grid-columns));
+  }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =push) and (@index =0) {
+  .col-@{class}-push-0 {
+    left: auto;
+  }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =pull) and (@index > 0) {
+  .col-@{class}-pull-@{index} {
+    right: percentage((@index / @grid-columns));
+  }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =pull) and (@index =0) {
+  .col-@{class}-pull-0 {
+    right: auto;
+  }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type =offset) {
+  .col-@{class}-offset-@{index} {
+    margin-left: percentage((@index / @grid-columns));
+  }
+}
+
+// Basic looping in LESS
+.loop-grid-columns(@index, @class, @type) when (@index >=0) {
+  .calc-grid-column(@index, @class, @type);
+  // next iteration
+  .loop-grid-columns((@index - 1), @class, @type);
+}
+
+// Create grid for specific class
+.make-grid(@class) {
+  .float-grid-columns(@class);
+  .loop-grid-columns(@grid-columns, @class, width);
+  .loop-grid-columns(@grid-columns, @class, pull);
+  .loop-grid-columns(@grid-columns, @class, push);
+  .loop-grid-columns(@grid-columns, @class, offset);
+}
+
+#footer {
+  background: #555;
+  padding: 50px 0;
+  color: #999;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+user agent stylesheet footer {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+user agent stylesheet html {
+  color: -internal-root-color;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+  color: #eeeeee;
+}
+
+#footer h4 {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+#footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#footer ul a {
+  color: #999999;
+}
+
+#footer ul a:hover {
+  color: #38a7bb;
+  text-decoration: none;
+}
+
+#footer .photostream div {
+  float: left;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33%;
+  padding: 7.5px;
+  overflow: hidden;
+}
+
+#footer .photostream div a {
+  border: solid 1 px #eeeeee;
+}
+
+#footer .photostream div img {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#footer .photostream div:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+#footer .blog-entries .item {
+  clear: both;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #555555;
+}
+
+#footer .blog-entries .item .image {
+  float: left;
+  width: 15%;
+  margin-right: 10px;
+}
+
+#footer .blog-entries .item .name {
+  width: 75%;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#footer .blog-entries .item .name h5 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+#footer .blog-entries .item .name h5 a {
+  color: #eeeeee;
+}
+
+#footer .blog-entries .item .text {
+  width: 100%;
+  clear: both;
+}
+
+#footer .blog-entries .item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#footer .social a {
+  color: #555555;
+  font-size: 25px;
+  margin: 0 10px 0 0;
+}
+
+#footer .social a:hover {
+  color: #38a7bb;
+}

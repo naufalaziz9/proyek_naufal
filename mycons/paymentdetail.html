@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>payment-detail</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style>
+         .col-md-4,
+        .col-md-8 {
+            border-color: #38a7bb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .col-md-12 #total {
+            height: 500px;
+            top: 180;
+            position: relative;
+        }
+
+        .box {
+            font-size: 20px;
+        }
+
+        .table {
+            font-size: 18px;
+        }
+
+        .col-md-12 {
+            margin-top: 20px;
+        }
+
+        #total {
+            top: 0px;
+        }
+
+        img {
+            height: 90px;
+            width: 280px;
+            position: relative;
+            left: -16px;
+            bottom: 50px;
+        }
+
+        #radio {
+            position: relative;
+            top: 70px
+        }
+
+        P,
+        H2 {
+            text-align: center;
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+
+            width: 85%;
+            margin: 10px auto;
+        }
+
+        nav ul ul {
+            display: none;
+        }
+
+        nav ul {
+            background: white;
+            padding: 0 20px;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            width: 100%;
+        }
+
+        /* nav ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        } */
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 25px;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul ul {
+            background: #53bd84;
+            border-radius: 0px;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+
+        /* nav ul ul li {
+            float: none;
+            border-top: 1px soild #53bd84;
+            border-bottom: 1px solid #53bd84;
+            position: relative;
+        } */
+
+        nav ul ul li a {
+            padding: 15px 40px;
+            color: black;
+        }
+</style>
+        <nav
+        style='width:100%;margin:0px;position:fixed;z-index:1;font-family: "Roboto",Helvetica,Arial,sans-serif;line-height: 1.5;font-weight: 570;text-transform: uppercase;letter-spacing: 0.1em;'>
+        <ul>
+            <li><a href="index.php" style="font-size: 40px;font-style:italic;text-decoration: none;">MY
+                    CONS</a></li>
+            <li style='position:relative;left:450px;'><a style="margin-top: 20px;text-decoration: none;"
+                    class="yes-hover">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       
+        <hr>
+        
+        <div class="row">
+           
+            <aside class="col-sm-12">
+        <p>Paymetn form2</p>
+        
+        <article class="card">
+        <div class="card-body p-5">
+        
+        <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                <i class="fa fa-credit-card"></i> Credit Card</a></li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                <i class="fab fa-paypal"></i>  Paypal</a></li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                <i class="fa fa-university"></i>  Bank Transfer</a></li>
+        </ul>
+        
+        <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-tab-card">
+            <p class="alert alert-success">Some text success or error</p>
+            <form role="form">
+            <div class="form-group">
+                <label for="username">Full name (on the card)</label>
+                <input type="text" class="form-control" name="username" placeholder="" required="">
+            </div> <!-- form-group.// -->
+        
+            <div class="form-group">
+                <label for="cardNumber">Card number</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="cardNumber" placeholder="">
+                    <div class="input-group-append">
+                        <span class="input-group-text text-muted">
+                            <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
+                            <i class="fab fa-cc-mastercard"></i> 
+                        </span>
+                    </div>
+                </div>
+            </div> <!-- form-group.// -->
+        
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label><span class="hidden-xs">Expiration</span> </label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="MM" name="">
+                            <input type="number" class="form-control" placeholder="YY" name="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                        <input type="number" class="form-control" required="">
+                    </div> <!-- form-group.// -->
+                </div>
+            </div> <!-- row.// -->
+            <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+            </form>
+        </div> <!-- tab-pane.// -->
+        <div class="tab-pane fade" id="nav-tab-paypal">
+        <p>Paypal is easiest way to pay online</p>
+        <p>
+        <button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Log in my Paypal </button>
+        </p>
+        <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="tab-pane fade" id="nav-tab-bank">
+        <p>Bank accaunt details</p>
+        <dl class="param">
+          <dt>BANK: </dt>
+          <dd> THE WORLD BANK</dd>
+        </dl>
+        <dl class="param">
+          <dt>Accaunt number: </dt>
+          <dd> 12345678912345</dd>
+        </dl>
+        <dl class="param">
+          <dt>IBAN: </dt>
+          <dd> 123456789</dd>
+        </dl>
+        <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div> <!-- tab-pane.// -->
+        </div> <!-- tab-content .// -->
+        
+        </div> <!-- card-body.// -->
+        </article> <!-- card.// -->
+        
+        
+            </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+        
+        </div> 
+        <!--container end.//-->
+        
+        <br><br>
+      
+</body>
+</html>
